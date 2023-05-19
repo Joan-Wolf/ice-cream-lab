@@ -19,7 +19,7 @@ export function PlayerList( props: {players: Player[], onAdd: (newPlayer: Player
                     </tr>
                 </thead>
                 <tbody>
-                {props.players.map(allPlayers => <PlayerRow players={allPlayers}></PlayerRow>)}
+                {props.players.map(allPlayers => <PlayerRow player={allPlayers}></PlayerRow>)}
                 </tbody>
             </table>
             <PlayerForm onAdd={(newPlayer: Player) => {props.onAdd(newPlayer)}}></PlayerForm>
