@@ -1,3 +1,20 @@
 .votes-container {
     width: 50%;
 }
+
+.progress {
+    height: 50px;
+    border: 1px solid black;
+
+}
+.vanilla {
+    background-color: bisque;
+}
+
+.chocolate {
+    background-color: chocolate;
+}
+
+.strawberry {
+    background-color: red;
+}

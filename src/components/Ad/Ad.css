@@ -1,0 +1,19 @@
+#box {
+    border: 3px solid black;
+    height: 150px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.lightTheme {
+    background-color: white;
+    color: #000;
+    border-color: #222;
+}
+
+.darkTheme {
+    background-color: #222;
+    color: #fff;
+}

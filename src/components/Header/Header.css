@@ -1,5 +1,10 @@
 .Header {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.Header h1 {
     font-family: 'Caveat', sans-serif;
-    
-
+     color: #0e3c7e;
 }

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./AdDesigner.css";
+import { Ad } from "../Ad/Ad";
 
 export function AdDesigner() {
     const [flavor, setFlavor] = useState("Strawberry");
@@ -14,10 +15,12 @@ export function AdDesigner() {
     function getStyles() {
         return {fontSize: `${fontSizeInput}px`}
     }
+    
     return (
         <div className="adDesigner-container">
-            <h1>Ad Designer</h1>
-            <div className={getAdClassName()}>
+            <h2>Ad Designer</h2>
+            <Ad flavor={flavor} fontSize={fontSizeInput} darkTheme={!colorTheme}></Ad>
+            <div className={colorTheme ? 'dark' : 'light'}>
                 <h3>Vote For</h3>
                 <h2 style={getStyles()}>{flavor}</h2>
             </div>
