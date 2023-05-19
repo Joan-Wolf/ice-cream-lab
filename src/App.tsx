@@ -9,10 +9,12 @@ import { Player } from './models/Player';
 
 function App() {
 
-  const [players, setPlayers] = useState<Player[]>([])
+
+  const [players, setPlayers] = useState<Player[]>([{name: "Fox", score: 12}, {name: "Turtle", score: 11}])
+
   return (
     <div className="App">
-<PlayerList onAdd={newPlayer => setPlayers([newPlayer, ...players])}></PlayerList>
+<PlayerList players={players} onAdd={newPlayer => setPlayers([newPlayer, ...players])}></PlayerList>
     </div>
   );
 }
